@@ -1,0 +1,20 @@
+{
+  "name": "ws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "@types/node": "^17.0.1",
+    "ts-node-dev": "^1.1.6"
+  }
+}
