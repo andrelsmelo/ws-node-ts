@@ -11,8 +11,8 @@ import { validateUsername } from './utils/validator';
 import configureWebSocketServer from './websocket.config';
 
 const app = express();
-const server: http.Server = configureWebSocketServer(); // Importando e configurando o servidor WebSocket
-const io: SocketIOServer = new SocketIOServer(server); // Iniciando o Socket.IO no servidor
+const server: http.Server = configureWebSocketServer();
+const io: SocketIOServer = new SocketIOServer(server);
 
 app.use(express.json());
 

@@ -5,7 +5,6 @@ export function configureWebSocketServer(): http.Server {
   const server = http.createServer();
   const io = new Server(server);
 
-  // Configurar eventos de conexão
   io.on('connection', (socket) => {
     console.info('A client connected:', socket.id);
 
@@ -16,7 +15,6 @@ export function configureWebSocketServer(): http.Server {
     //   io.emit('chatMessage', message);
     // });
 
-    // Evento para quando um cliente desconectar
     socket.on('disconnect', () => {
       console.info('A client disconnected:', socket.id);
     });
