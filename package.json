@@ -9,7 +9,8 @@
     "build": "tsc",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "fmt": "prettier  --ignore-unknown --write ."
+    "fmt": "prettier  --ignore-unknown --write .",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
